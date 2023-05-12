@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo Form Lấy Khảo Sát</title>
+</head>
+<body>
+    <Form action="https://www.facebook.com/Dvamk1/">
+    <h2>Market Research Survey</h2>
+    <div>Please take a few moments to complete this satisfaction survey.</div><br>
+    <span>What is your age range?</span><br>
+    <select name="What is your age range?" style="width: 500px;height: 24px;">
+    <option>18-24</option>
+    <option>25-34</option>
+    <option>35-50</option>
+    <option>50+</option>
+</select><br><br>
+    <span>What is your yearly income range?</span><br>
+    <select name="What is your yearly income range?" style="width: 500px;height: 24px;">
+        <option>$0 - $25,000</option>
+        <option>$25,001 - $50,000</option>
+        <option>$50,001 - $100,000</option>
+        <option>$100,000+</option>
+    </select><br><br>
+    <span> Gender Identity</span><br>
+    <input type="radio" id="Male" name="Gender" value="Male">
+    <label for="Male">Male</label><br>
+    <input type="radio" id="Female" name="Gender" value="Female">
+    <label for="Female">Female</label><br><br>
+    <span>Which of the following products have your purchased in the last 2 months. Please check all that apply.</span><br>
+    <input type="checkbox"> Product 1 <br>
+    <input type="checkbox"> Product 2 <br>
+    <input type="checkbox"> Product 3 <br><br>
+    <span>How often would you use our new product?</span><br>
+    <input type="radio"> Daily <br>
+    <input type="radio"> Weekly <br>
+    <input type="radio"> Monthly <br><br>
+    <table>
+                    <span>What would you pay for the new product?</span><br>
+                    <tbody style="width: 40%;">
+                <td>
+                $ <input type="text" style="width: 80px;" > .
+                </td>
+                <td>
+                <input type="text" style="width: 15px;">
+                </td>
+                </tr>
+                <tr>
+                <td>
+                Dollars
+                </td>
+               <td>
+                Cents
+               </td>
+               </tr>
+               </tbody>
+</table><br>
+    <div>What features would you like to see in the new product.</div><br>
+    <textarea rows="10" cols="200"></textarea>
+    <span>please rate your level of agreement with the following statements.</span><br>
+    <table border="1">
+        <tbody>
+            <tr style="background-color: lightgray;">
+                <td></td>
+                <td>Strongly Disagree</td>
+                <td>Disagree</td>
+                <td>Agree</td>
+                <td>Strongly Agree</td>
+            </tr>
+            <tr>
+                <th>our products are priced fairly.</th>
+                <th><input type="radio">1</th>
+                <th><input type="radio">2</th>
+                <th><input type="radio">3</th>
+                <th><input type="radio">4</th>
+            </tr>
+            <tr style="background-color: lightgray;">
+                <th>Our products are high quality.</th>
+                <th><input type="radio">1</th>
+                <th><input type="radio">2</th>
+                <th><input type="radio">3</th>
+                <th><input type="radio">4</th>
+            </tr>
+            <tr>
+                <th>You would recommend our product to a friend or coworker.</th>
+                <th><input type="radio">1</th>
+                <th><input type="radio">2</th>
+                <th><input type="radio">3</th>
+                <th><input type="radio">4</th>
+            </tr>
+        </tbody>
+    </table>
+    <input type="submit">
+</Form>
+</body>
+</html>
