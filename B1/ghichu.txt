@@ -5,3 +5,8 @@ CSS : Căn Giữa :
             align-items: center;
             justify-content: center;
         }
+
+<button onclick="alert()" type="button">Nhập</button>
+function alert() {
+            prompt("Nhập vào các mùa trong năm")
+        }

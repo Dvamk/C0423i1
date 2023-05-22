@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển Đổi Tiền Tệ</title>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <th>Amount</th>
+                <th>From Currency</th>
+                <th>To Currency</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" id="number">
+                </td>
+                <td>
+                    <select id="Curency1">
+                        <option value="VietNam">Việt Nam</option>
+                        <option value="USD">USD</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Curency2">
+                        <option value="USD">USD</option>
+                        <option value="VietNam">Việt Nam</option>
+                    </select>
+                <td>
+                    <button onclick="calculate()" value="Convert">Convert</button>
+                </td>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <div id="result"></div>
+
+    <script>
+        function calculate() {
+            let giaTri = document.getElementById('number').value;
+            let Curency1 = document.getElementById('Curency1').value;
+            let Curency2 = document.getElementById('Curency2').value;
+            let result = document.getElementById('result')
+            console.log(giaTri);
+            console.log(Curency1);
+            console.log(Curency2);
+            console.log(result);
+            let number
+            if (Curency1 == "USD" && Curency2 == "VietNam") {
+                number = giaTri * 23000
+                result.innerHTML = number
+            }
+            if (Curency1 == "VietNam" && Curency2 == "USD") {
+                number = giaTri / 23000
+                result.innerHTML = number
+            }
+            // amount = giaTri * Curency2 / Curency1
+            // result.innerHTML = amount
+        }
+    </script>
+</body>
+
+</html>

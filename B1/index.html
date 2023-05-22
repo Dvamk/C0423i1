@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Nhập vào các mùa trong năm</p>
+    <button onclick="trungdepzai()" type="button">Nhập</button>
+    <script>
+        function trungdepzai() {
+            let season = prompt("Nhập vào các mùa trong năm");
+            if (season == "Mùa xuân") {
+                alert("Hoa nở")
+            } else {
+                if (season == "Mùa hè") {
+                    alert("Nghỉ học")
+                } else {
+                    if (season == "Mùa thu") {
+                        alert("Khai giảng")
+                    } else {
+                        if (season == "Mùa đông") {
+                            alert("Nghỉ lụt")
+                        } else {
+                            alert("Vui Lòng Nhập Lại")
+
+                        }
+
+                    }
+
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
