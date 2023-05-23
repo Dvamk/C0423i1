@@ -10,3 +10,11 @@ CSS : Căn Giữa :
 function alert() {
             prompt("Nhập vào các mùa trong năm")
         }
+
+đổi số qua chữ parseInt('123') trả về là 123;
+đổi số qua chữ parseFloat('1.23') trả về là 1.23;
+
+1 vong for co ban
+for (let i = 1; i <= 10; i++) {
+
+}
