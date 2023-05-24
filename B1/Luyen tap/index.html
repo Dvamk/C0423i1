@@ -9,32 +9,80 @@
 </head>
 
 <body>
-    <p>Nhập vào các mùa trong năm</p>
-    <button onclick="trungdepzai()" type="button">Nhập</button>
     <script>
-        function trungdepzai() {
-            let season = prompt("Nhập vào các mùa trong năm");
-            if (season == "Mùa xuân") {
-                alert("Hoa nở")
-            } else {
-                if (season == "Mùa hè") {
-                    alert("Nghỉ học")
-                } else {
-                    if (season == "Mùa thu") {
-                        alert("Khai giảng")
-                    } else {
-                        if (season == "Mùa đông") {
-                            alert("Nghỉ lụt")
-                        } else {
-                            alert("Vui Lòng Nhập Lại")
+        // var opera = "+";
+        // var a = 6;
+        // var b = 3;
+        // switch (opera) {
+        //     case '+':
+        //         alert("a + b=" + (a + b));
+        //         break;
+        //     case '-':
+        //         alert("a - b=" + (a - b));
+        //         break;
+        //     case '*':
+        //         alert("a * b=" + (a * b));
+        //         break;
+        //     case '/':
+        //         alert("a / b=" + (a / b));
+        //     default:
+        //         alert("Không có phép toán!");
+        //         break;
+        // }
 
-                        }
+        // switch (new Date().getDay()) {
+        //     case 0:
+        //         day = "Chủ nhật"
+        //         break
+        //     case 1:
+        //         day = "Thứ hai"
+        //         break
+        //     case 2:
+        //         day = "Thứ ba"
+        //         break
+        //     case 3:
+        //         day = "Thứ tư"
+        //         break
+        //     case 4:
+        //         day = "Thứ năm"
+        //         break
+        //     case 5:
+        //         day = "Thứ 6"
+        //         break
+        //     case 6:
+        //         day = "Thứ bảy"
+        //         break
+        // }
+        // document.write(day);
 
-                    }
+        // switch (new Date().getDay()) {
+        //     case 6:
+        //         Text = "Today is Statuday";
+        //         break
+        //     case 0:
+        //         Text = "Today is Sunday";
+        //         break
+        //     default:
+        //         Text = "Looking forward to the weekend"
+        // }
+        // document.write(Text)
 
-                }
-            }
+        switch (new Date().getDay()) {
+            case 1:
+            case 2:
+            case 3:
+            default:
+                Text = "Looking forward to the weekend";
+                break;
+            case 4:
+            case 5:
+                Text = "Soon it is weekend"
+                break
+            case 0:
+            case 6:
+                Text = "It is weekend"
         }
+        document.write(Text)
     </script>
 </body>
 
